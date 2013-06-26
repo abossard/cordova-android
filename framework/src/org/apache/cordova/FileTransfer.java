@@ -746,7 +746,7 @@ public class FileTransfer extends CordovaPlugin {
                     String cookie = CookieManager.getInstance().getCookie(source);
                     if(cookie != null)
                     {
-                        connection.setRequestProperty("cookie", cookie);
+                        connection.setRequestProperty("Cookie", cookie);
                     }
                     
                     // This must be explicitly set for gzip progress tracking to work.
